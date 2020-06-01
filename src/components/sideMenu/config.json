@@ -1,0 +1,61 @@
+ [
+  {
+    "title": "Main",
+    "children": [
+      {
+        "title": "summary",
+        "url": "/summary"
+      },
+      {
+        "title": "CPU usage",
+        "url": "/cpu"
+      },
+      {
+        "title": "EII Graphing",
+        "url": "/eii"
+      }
+    ]
+  },
+  {
+    "title": "Alarms"
+  },
+  {
+    "title": "OTT"
+  },
+  {
+    "title": "Multicasts"
+  },
+  {
+    "title": "MW"
+  },
+  {
+    "title": "RDP"
+  },
+  {
+    "title": "Traffic"
+  },
+  {
+    "title": "Ethernet"
+  },
+  {
+    "title": "ETR 290"
+  },
+  {
+    "title": "ASI"
+  },
+  {
+    "title": "COFDM/QAM"
+  },
+  {
+    "title": "SAT"
+  },
+  {
+    "title": "Setup"
+  },
+  {
+    "title": "Data"
+  },
+  {
+    "title": "About"
+  }
+]

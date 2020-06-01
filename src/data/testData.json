@@ -1,0 +1,27 @@
+[
+   {
+      "name": "psu1",
+      "status": "no",
+      "volt": "Power Supply AC lost"
+   },
+   {
+      "name": "psu2",
+      "status": "ok",
+      "volt": "231"
+   },
+   {
+      "name": "mgmt1",
+      "link_status": "no link",
+      "bps": 0
+   },
+   {
+      "name": "mgmt2",
+      "link_status": "1000Mbit",
+      "bps": 123567
+   },
+   {
+      "name": "data2",
+      "link_status": "100000Mbit",
+      "bps": 455645
+   }
+]

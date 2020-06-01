@@ -1,0 +1,30 @@
+@import '../../variables';
+.MuiButtonBase-root.MuiListItem-root.MuiListItem-gutters.MuiListItem-button {
+  padding: 0 15px;
+}
+
+.MuiPaper-root.MuiDrawer-paper {
+  background-color: black;
+  color: white;
+  position: relative;
+  max-width: 220px;
+  padding: 0;
+}
+
+.MuiListItemText-root.MuiListItemText-inset {
+  color: white;
+  padding: 0;
+}
+
+.MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypography-displayBlock {
+  font-family: 'Pathway Gothic One';
+  font-size: 24px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none
+}
+
+.MuiCollapse-wrapperInner {
+  background-color: $bridge-gray;
+}
