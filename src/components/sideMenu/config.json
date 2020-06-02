@@ -11,7 +11,11 @@
         "url": "/cpu"
       },
       {
-        "title": "EII Graphing",
+        "title": "Thumb",
+        "url": "/thumb"
+      },
+      {
+        "title": "EII",
         "url": "/eii"
       }
     ]

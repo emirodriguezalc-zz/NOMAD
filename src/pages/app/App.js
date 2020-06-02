@@ -8,6 +8,7 @@ import bridge from '../../images/bridgetech-world.jpg'
 import { BrowseRouter as Router, Switch, Route } from 'react-router-dom';
 import summary from '../summary';
 import cpu from '../cpu';
+import thumb from '../thumb';
 import eii from '../eii';
 
 
@@ -38,6 +39,7 @@ function App() {
         <div className='dinamic-content'>
           <Route path='/summary' component={summary} />
           <Route path='/cpu' component={cpu} />
+          <Route path='/thumb' component={thumb} />
           <Route path='/eii' component={eii} />
         </div>
       </div>
