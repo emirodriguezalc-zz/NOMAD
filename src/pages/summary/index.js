@@ -1,38 +1,27 @@
-import React, { Component } from 'react';
-import Line from 'react-chartjs2';
+import React from 'react';
+import './styles'
+import hardware from '../../images/hardware.png';
+import portDictionary from './portDictionary.json'
 
-class Summary extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      data: {
-        labels: [1, 2, 3, 4, 5],
-        datasets: [
-          {
-            label: 'CPU usage',
-            backgroundColor: "rgb(31, 165, 4)",
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+const summary = () => (
+  <div className="summary-wrapper">
+    <h1 className="summary-title">Summary</h1>
+    <div className='nomad-hardware-containter'>
+      <img className="nomad-hardware-image" src={hardware} alt="hardware image" />
+      <div className='nomad-hardware-port-wrapper'>
+        <div className="nomad-hardware-port-naming">
+          {portDictionary.map((item, index) => {
+            const customClassName = (item.name+index).toLowerCase().replace(/ |\//g,'');
+            console.log(customClassName)
+            return (
+              <div className={`nomad-hardware-port-name ${customClassName}`}>{item.name}</div>
+            )
+          })
           }
-        ]
-      }
-    }
-  }
-
-  render() {
-    return (
-      <div className='chart-wrapper'>
-        <h3>Chart sample</h3>
-        <Line
-          options={{
-            responsive: true
-          }}
-          type= 'line'
-          data= {this.state.data}
-          />
+        </div>
       </div>
-    )
-  }
-}
+    </div>
+  </div>
+);
 
-export default Summary
+export default summary

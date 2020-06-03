@@ -1,5 +1,69 @@
-.chart-wrapper {
+.summary-wrapper {
   position: "relative";
-   width: 600px;
-   height: 550px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.summary-title {
+  font-family: "Pathway Gothic One";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0;
+  padding: 15px;
+}
+
+.nomad-hardware-containter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nomad-hardware-image {
+  width: 70%;
+  align-self: center;
+  margin: 15px;
+}
+
+.nomad-hardware-port-wrapper {
+  display: flex;
+  width: 70%;
+  align-self: center;
+}
+
+.nomad-hardware-port-naming {
+  display: flex;
+  width: 100%;
+}
+
+.nomad-hardware-port-name {
+  color: white;
+}
+
+.mgm0 {
+  margin-left: 12.5%;
+}
+.datamgm1 {
+  margin-left: 5%;
+}
+.mgm2 {
+  margin-left: 5.5%;
+}
+.data3 {
+  margin-left: 6.5%;
+}
+.asiin4 {
+  margin-left: 4.5%;
+}
+.asiout5 {
+  margin-left: 2.5%;
+}
+.sat6 {
+  margin-left: 3%;
+}
+.cofdmqam7 {
 }

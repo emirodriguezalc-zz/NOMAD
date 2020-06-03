@@ -27,6 +27,7 @@ const Cpu = ({ }) => {
     });
   }, []);
 
+  console.log(data)
   // 2. render the line chart using the state
   return (
     <div>
@@ -34,8 +35,11 @@ const Cpu = ({ }) => {
       <ResponsiveContainer>
         <AreaChart data={data}>
           <CartesianGrid strokeDasharray="2 2" stroke="rgb(105, 102, 102)" />
-          <XAxis stroke="#ffffff" />
-          <YAxis stroke="#ffffff" />
+          <XAxis
+            stroke="#ffffff"
+            dataKey='name'
+          />
+          <YAxis stroke="#ffffff" interval={10}/>
           <Tooltip />
           <Area type="monotone" dataKey="value" stroke="#0AFFB1" fill="#00b57d" fillOpacity={0.3} />
         </AreaChart>
