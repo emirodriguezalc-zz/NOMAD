@@ -31,7 +31,11 @@
     "start:client": "nodemon src/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint src --ext .js --cache",
+    "lint:css": "sass-lint src --ext .scss --cache"
   },
   "eslintConfig": {
     "extends": "react-app"

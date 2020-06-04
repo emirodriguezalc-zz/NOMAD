@@ -1,0 +1,243 @@
+[
+  {
+    "name": "NTP/timesync",
+    "status": "ok",
+    "children": [
+      {
+        "name": "Updated",
+        "value": "23 secs ago",
+        "status": ""
+      },
+      {
+        "name": "Freq offset",
+        "value": "19.928 ppm",
+        "status": ""
+      },
+      {
+        "name": "Timezone",
+        "value": "UTC+1",
+        "status": ""
+      },
+      {
+        "name": "Time",
+        "value": "jun 9 17:55:00",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "Data interface",
+    "status": "ok",
+    "children": [
+      {
+        "name": "IPv4 status:",
+        "value": "Enabled (Manual)",
+        "status": ""
+      },
+      {
+        "name": "IPv4 address:",
+        "value": "192.168.100.21",
+        "status": ""
+      },
+      {
+        "name": "IPv4 netmask:",
+        "value": "255.255.255.0",
+        "status": ""
+      },
+      {
+        "name": "IPv6 status:",
+        "value": "Disabled",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "RDP",
+    "status": "no",
+    "children": [
+      {
+        "name": "active",
+        "value": "disabled",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "Counters and alarms",
+    "status": "",
+    "children": [
+      {
+        "name": "Last cleared",
+        "value": "",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "Management interface",
+    "status": "ok",
+    "children": [
+      {
+        "name": "IPv4 status:",
+        "value": "Enabled (Manual)",
+        "status": ""
+      },
+      {
+        "name": "IPv4 address:",
+        "value": "185.102.108.139",
+        "status": ""
+      },
+      {
+        "name": "IPv4 netmask:",
+        "value": "255.255.252.0",
+        "status": ""
+      },
+      {
+        "name": "IPv6 status:",
+        "value": "Disabled",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "Probe",
+    "status": "",
+    "children": [
+      {
+        "name": "Name",
+        "value": "NOMAD",
+        "status": ""
+      },
+      {
+        "name": "Location",
+        "value": "Rack H",
+        "status": ""
+      },
+      {
+        "name": "Access",
+        "value": "Read-only",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "ETH Info",
+    "status": "",
+    "children": [
+      {
+        "name": "Joined",
+        "value": "6",
+        "status": ""
+      },
+      {
+        "name": "Unicasts",
+        "value": "0",
+        "status": ""
+      },
+      {
+        "name": "Multicasts",
+        "value": "6",
+        "status": ""
+      },
+      {
+        "name": "SSM",
+        "value": "Disabled",
+        "status": ""
+      },
+      {
+        "name": "IGMP ver",
+        "value": "3",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "Resources",
+    "status": "",
+    "children": [
+      {
+        "name": "CPU level",
+        "value": "3/10",
+        "status": "ok"
+      },
+      {
+        "name": "Free mem",
+        "value": "1599M",
+        "status": "ok"
+      },
+      {
+        "name": "Free disk",
+        "value": "1599M",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "name": "ETH Alarms per type",
+    "status": "",
+    "children": [
+      {
+        "name": "No signal",
+        "value": "0",
+        "status": "ok"
+      },
+      {
+        "name": "CC skips",
+        "value": "0",
+        "status": "no"
+      },
+      {
+        "name": "MLR >= thresh",
+        "value": "0",
+        "status": "ok"
+      },
+      {
+        "name": "IAT >= thresh",
+        "value": "0",
+        "status": "no"
+      },
+      {
+        "name": "RTP alarms",
+        "value": "0",
+        "status": "ok"
+      },
+      {
+        "name": "Other alarms",
+        "value": "0",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "name": "Traffic",
+    "status": "",
+    "children": [
+      {
+        "name": "RX data",
+        "value": "65.980 Mbps dynamic",
+        "status": ""
+      },
+      {
+        "name": "Monitored data",
+        "value": "65.980 Mbps dynamic",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "name": "OTT info",
+    "status": "",
+    "children": [
+      {
+        "name": "Channels",
+        "value": "3",
+        "status": ""
+      },
+      {
+        "name": "Profiles",
+        "value": "6",
+        "status": ""
+      }
+    ]
+  }
+]

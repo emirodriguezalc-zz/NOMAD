@@ -27,7 +27,6 @@ const Cpu = ({ }) => {
     });
   }, []);
 
-  console.log(data)
   // 2. render the line chart using the state
   return (
     <div>

@@ -8,8 +8,7 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import Drawer from "@material-ui/core/Drawer";
 import { Link } from "react-router-dom";
-import { ListItemIcon } from "@material-ui/core";
-import menuItems from './config.json'
+import menuItems from '../../data/config.json'
 
 class SideMenu extends Component {
   constructor(props) {

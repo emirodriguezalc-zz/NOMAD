@@ -11,17 +11,17 @@
    },
    {
       "name": "mgmt1",
-      "link_status": "no link",
+      "status": "no-link",
       "bps": 0
    },
    {
       "name": "mgmt2",
-      "link_status": "1000Mbit",
+      "status": "ok",
       "bps": 123567
    },
    {
       "name": "data2",
-      "link_status": "100000Mbit",
+      "status": "no",
       "bps": 455645
    }
 ]

@@ -33,37 +33,5 @@
   display: flex;
   width: 70%;
   align-self: center;
-}
-
-.nomad-hardware-port-naming {
-  display: flex;
-  width: 100%;
-}
-
-.nomad-hardware-port-name {
-  color: white;
-}
-
-.mgm0 {
-  margin-left: 12.5%;
-}
-.datamgm1 {
-  margin-left: 5%;
-}
-.mgm2 {
-  margin-left: 5.5%;
-}
-.data3 {
-  margin-left: 6.5%;
-}
-.asiin4 {
-  margin-left: 4.5%;
-}
-.asiout5 {
-  margin-left: 2.5%;
-}
-.sat6 {
-  margin-left: 3%;
-}
-.cofdmqam7 {
+  justify-content: space-around;
 }
