@@ -21,11 +21,10 @@ const NtpTimesync = () => {
       <div className="summary-item-wrapper">
         <PortStatus name='NTP Timesync' status='ok' />
         <div>
-          <div> {`Updated : ${moment().format('s')} secs ago`}</div>
+          <div>Updated : <Timer /> seconds ago</div>
           <div> {`Freq offset : 19.928 ppm`}</div>
           <div> {`Timezone : UTC${data.utc_offset}`}</div>
-          <div>Time : <Clock /></div>
-          <div>Time : <Timer /></div>
+          <div> Time: <Clock /></div>
         </div>
       </div>) : <div>Loading</div>)
 };

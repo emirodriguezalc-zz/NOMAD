@@ -2,26 +2,19 @@ import React, { useState, useEffect } from 'react';
 
 
 function Timer() {
-
   const [time, setTime] = useState(0);
 
   useEffect(() => {
-    setInterval(tick, 1000);
-
-    return () => {
-      clearInterval(tick)
-    }
-
+    const intervalId = window.setInterval(() => {
+      setTime(seconds => seconds + 1);
+    }, 1000);
+    return () => window.clearInterval(intervalId);
   }, [time])
 
-  const tick = () => {
-    setTime(time + 1)
-  }
-
   return (
-    <div className='timer-wrapper'>
+    <span className='timer-wrapper'>
       {time}
-    </div>
+    </span>
   );
 }
 

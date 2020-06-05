@@ -1,31 +1,5 @@
 [
   {
-    "name": "NTP/timesync",
-    "status": "ok",
-    "children": [
-      {
-        "name": "Updated",
-        "value": "23 secs ago",
-        "status": ""
-      },
-      {
-        "name": "Freq offset",
-        "value": "19.928 ppm",
-        "status": ""
-      },
-      {
-        "name": "Timezone",
-        "value": "UTC+1",
-        "status": ""
-      },
-      {
-        "name": "Time",
-        "value": "jun 9 17:55:00",
-        "status": ""
-      }
-    ]
-  },
-  {
     "name": "Data interface",
     "status": "ok",
     "children": [
