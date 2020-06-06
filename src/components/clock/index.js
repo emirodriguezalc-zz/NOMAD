@@ -18,14 +18,12 @@ function Clock() {
     setTime(new Date())
   }
 
+  var options = { month: 'long'};
   const month = new Intl.DateTimeFormat('en-US', options).format(new Date());
   const day = time.getDate();
   const hours = time.getHours();
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-
-  var options = { month: 'long'};
-
 
   return (
     <span className='clock-wrapper'>

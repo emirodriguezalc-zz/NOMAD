@@ -19,8 +19,8 @@ const NtpTimesync = () => {
   return (
     data ? (
       <div className="summary-item-wrapper">
-        <PortStatus name='NTP Timesync' status='ok' />
-        <div>
+        <PortStatus name='NTP Timesync' status='ok' className='port-status-items'/>
+        <div className="summary-children-wrapper">
           <div>Updated : <Timer /> seconds ago</div>
           <div> {`Freq offset : 19.928 ppm`}</div>
           <div> {`Timezone : UTC${data.utc_offset}`}</div>

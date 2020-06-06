@@ -1,25 +1,35 @@
 .summary-item-wrapper {
-  margin: 10px 10px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 20px
 }
 
 .summary-item {
   width: 10px;
   height: 10px;
 
-  &-ok{
+  &-ok {
     background-color: green;
   }
-  &-no{
+  &-no {
     background-color: white;
   }
-  &-no-link{
+  &-no-link {
     background-color: orange;
   }
+}
 
-  &-children-wrapper {
-    display: flex;
-    align-items: center;
-  }
+.summary-children-wrapper {
+  margin-left: 20px;
+
+  text-align: left;
+  font-size: 21px;
+}
+
+.summary-children-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.summary-children {
+margin-right: 10px;
 }

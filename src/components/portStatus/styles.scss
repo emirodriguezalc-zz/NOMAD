@@ -1,13 +1,13 @@
 .port-status {
   width: 10px;
   height: 10px;
-  &-ok{
+  &-ok {
     background-color: green;
   }
-  &-no{
+  &-no {
     background-color: white;
   }
-  &-no-link{
+  &-no-link {
     background-color: orange;
   }
 }
@@ -16,11 +16,15 @@
   display: flex;
   margin: 0 10px;
   align-items: center;
-  margin: 0px 15px 15px 15px;
+  margin: 0px 15px 10px 15px;
 }
 
 .port-status-title {
-  font-family: 'Pathway Gothic One';
+  font-family: "Pathway Gothic One";
   font-size: 24px;
   margin: 0 5px;
+}
+
+.port-status-items {
+  border-bottom: 1px solid green;
 }

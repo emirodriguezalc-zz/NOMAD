@@ -18,12 +18,25 @@ const summary = () => (
         }
       </div>
       <div>
-        <NtpTimeSync />
+
       </div>
       <div className='nomad-summary-items-wrapper'>
-        {
-          summaryData.map((item) => <SummaryItems name={item.name} status={item.status} children={item.children} />)
-        }
+        <div className='nomad-summary-items'>
+          <NtpTimeSync />
+          {
+            summaryData.map((item, i) => i < 3 && <SummaryItems name={item.name} status={item.status} children={item.children} />)
+          }
+        </div>
+        <div className='nomad-summary-items'>
+          {
+            summaryData.map((item, i) => i > 3 && i < 7 && <SummaryItems name={item.name} status={item.status} children={item.children} />)
+          }
+        </div>
+        <div className='nomad-summary-items'>
+          {
+            summaryData.map((item, i) => i > 6 && <SummaryItems name={item.name} status={item.status} children={item.children} />)
+          }
+        </div>
       </div>
 
     </div>

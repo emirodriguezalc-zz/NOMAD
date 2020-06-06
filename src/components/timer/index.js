@@ -1,21 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 
 
-function Timer() {
-  const [time, setTime] = useState(0);
+class Timer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 0
+    }
+  }
 
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setTime(seconds => seconds + 1);
-    }, 1000);
-    return () => window.clearInterval(intervalId);
-  }, [time])
+  render() {
+    const { count } = this.state
+    return (
+      <span>
+        {count}
+      </span>
+    )
+  }
+  componentDidMount() {
+    this.myInterval = setInterval(() => {
+      this.setState(prevState => ({
+        count: prevState.count + 1
+      }))
 
-  return (
-    <span className='timer-wrapper'>
-      {time}
-    </span>
-  );
+    }, 1000)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.myInterval)
+  }
 }
 
 export default Timer;
