@@ -1,7 +1,7 @@
 import React from 'react';
-
+import ThumbComponent from '../../components/thumb'
 const thumb = () => (
-  <h1>thumb</h1>
+  <ThumbComponent  title='title' serviceId='1234'/>
 )
 
-export default thumb
+export default thumb;

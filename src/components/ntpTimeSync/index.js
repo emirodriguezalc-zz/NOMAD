@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-//import './styles';
 import PortStatus from '../portStatus';
 import axios from 'axios';
 import moment from 'moment';
