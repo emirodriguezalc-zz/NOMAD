@@ -1,8 +1,10 @@
 .thumb-wrapper {
+  position: relative;
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 125px;
+  height: 190px;
   color: white;
   font-family: "Pathway Gothic One";
   margin: 10px;
@@ -11,6 +13,10 @@
 }
 
 .thumb-img {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  display: flex;
   width: 95px;
   height: 54;
   margin: 5px 10px 10px 10px;
