@@ -1,0 +1,17 @@
+.dinamic-content {
+  background-color: unset;
+}
+
+.thumb-page-wrapper {
+  display: flex;
+  margin: 15px;
+}
+
+.nomad-thumb-items-wrapper {
+  }
+
+  .nomad-thumb-items {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }

@@ -1,55 +1,27 @@
-//Este componente se va a encargar de recibir una imagen dinamica
-//(le tengo que pegar a una api), un titulo y un service id
-import React, { useState, useEffect, Component } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import './styles'
 
-/* class Thumb extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { image: "https://picsum.photos/100" };
-  }
-  componentDidMount() {
-    this.imgID = setInterval(() => {
-      this.tickImg();
-    }, 1000);
-  }
-  componentWillUnmount() {
-    clearInterval(this.imgID);
-  }
-  tickImg() {
-    this.setState({ image: "https://picsum.photos/100?" + Math.random() });
-  }
-  render() {
-    return (
-      <div>
-        <h4>This is Random IMG:</h4>
-        <img src={this.state.image}></img>
-      </div>
-    );
-  }
-} */
-
-
-const Thumb = () => {
-  const [image, setImage] = useState('https://picsum.photos/100');
+const Thumb = ({ title, serviceId }) => {
+  const [image, setImage] = useState('https://picsum.photos/95/54');
 
   useEffect(() => {
-    setInterval(showImage, 5000);
+    const interval = setInterval(showImage, 5000);
 
-    return () => {
-      clearInterval(showImage)
-    }
+    return () => clearInterval(interval)
   }, [image])
 
   const showImage = () => {
-    setImage("https://picsum.photos/100?" + Math.random())
+    setImage("https://picsum.photos/95/54?" + Math.random())
   }
 
   return (
-    <div>
-      <h4>This is Random IMG:</h4>
-      <img src={image}></img>
+    <div className='thumb-wrapper'>
+      <div className='thumb-title'>{title}</div>
+      <div className='thumb-id'>Service ID : {serviceId}</div>
+      <div className="thumb-checkbox">
+        <input type="checkbox" /> <div>Freeze</div>
+      </div>
+      <img className="thumb-img" src={image}></img>
     </div>
   );
 }

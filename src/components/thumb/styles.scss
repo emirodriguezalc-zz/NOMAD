@@ -1,0 +1,36 @@
+.thumb-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  color: white;
+  font-family: "Pathway Gothic One";
+  margin: 10px;
+  background-color: rgba(255, 254, 254, 0.158);
+  border-radius: 5px;
+}
+
+.thumb-img {
+  width: 95px;
+  height: 54;
+  margin: 5px 10px 10px 10px;
+  border: 1px solid black;
+}
+
+.thumb-title {
+  font-size: 25px;
+  margin: 10px 5px 5px 5px;
+  text-align: center;
+}
+
+.thumb-id {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.thumb-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin: 3px 10px;
+}

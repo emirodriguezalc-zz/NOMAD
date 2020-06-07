@@ -5,7 +5,7 @@ import PortStatus from '../../components/portStatus';
 import SummaryItems from '../../components/summaryItems';
 import NtpTimeSync from '../../components/ntpTimeSync'
 import portData from '../../data/portData.json';
-import summaryData from '../../data/summaryItems.json';
+import summaryData from '../../data/summaryItemData.json';
 
 const summary = () => (
   <div className="summary-wrapper">

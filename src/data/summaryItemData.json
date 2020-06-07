@@ -188,12 +188,12 @@
     "children": [
       {
         "name": "RX data",
-        "value": "65.980 Mbps dynamic",
+        "value": "65.980 Mbps",
         "status": ""
       },
       {
         "name": "Monitored data",
-        "value": "65.980 Mbps dynamic",
+        "value": "65.980 Mbps",
         "status": ""
       }
     ]

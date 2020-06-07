@@ -6,11 +6,9 @@ function Clock() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    setInterval(tick, 1000);
+   const interval = setInterval(tick, 1000);
 
-    return () => {
-      clearInterval(tick)
-    }
+    return () => clearInterval(interval)
 
   }, [time])
 

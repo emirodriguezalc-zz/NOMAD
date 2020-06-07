@@ -9,8 +9,6 @@ import { BrowseRouter as Router, Switch, Route } from 'react-router-dom';
 import summary from '../summary';
 import cpu from '../cpu';
 import thumb from '../thumb';
-import eii from '../eii';
-
 
 function App() {
   const useProgressiveImage = src => {
@@ -40,7 +38,6 @@ function App() {
           <Route path='/summary' component={summary} />
           <Route path='/cpu' component={cpu} />
           <Route path='/thumb' component={thumb} />
-          <Route path='/eii' component={eii} />
         </div>
       </div>
     {/*   <div className='main-footer'> Copyright © 2020 Bridge Technologies. All rights reserved</div> */}
