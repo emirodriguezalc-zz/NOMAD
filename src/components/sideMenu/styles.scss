@@ -1,18 +1,19 @@
 @import '../../variables';
+
 .MuiButtonBase-root.MuiListItem-root.MuiListItem-gutters.MuiListItem-button {
   padding: 0 15px;
 }
 
 .MuiPaper-root.MuiDrawer-paper {
-  background-color: black;
-  color: white;
   position: relative;
-  max-width: 220px;
   padding: 0;
+  background-color: black;
+  color: #ffffff;
+  max-width: 220px;
 }
 
 .MuiListItemText-root.MuiListItemText-inset {
-  color: white;
+  color: #ffffff;
   padding: 0;
 }
 

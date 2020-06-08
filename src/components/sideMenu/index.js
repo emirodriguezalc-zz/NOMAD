@@ -34,6 +34,7 @@ class SideMenu extends Component {
           </div>
         );
       }
+
       return (
         <div key={subOption.title}>
           <ListItem button onClick={() => this.handleClick(subOption.title)}>
@@ -48,7 +49,6 @@ class SideMenu extends Component {
     });
   }
   render() {
-    const { classes, drawerOpen, menuOptions } = this.props;
     return (
       <div>
         <Drawer

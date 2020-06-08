@@ -20,16 +20,14 @@ const socket = io('http://localhost:3000', {
 const Cpu = ({ }) => {
   const [data, setData] = useState([]);
 
-  // 1. listen for a cpu event and update the state
   useEffect(() => {
     socket.on('cpu', cpuPercent => {
       setData(currentData => [...currentData, cpuPercent]);
     });
   }, []);
 
-  // 2. render the line chart using the state
   return (
-    <div>
+    <div className="cpu-wrapper">
       <h1 className="chart-title">Real Time CPU Usage</h1>
       <ResponsiveContainer>
         <AreaChart data={data}>

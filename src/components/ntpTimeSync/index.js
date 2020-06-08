@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PortStatus from '../portStatus';
 import axios from 'axios';
-import moment from 'moment';
 import Clock from '../clock'
 import Timer from '../timer'
 
@@ -15,6 +14,7 @@ const NtpTimesync = () => {
         setData(response.data)
       })
   }, [url])
+
   return (
     data ? (
       <div className="summary-item-wrapper">

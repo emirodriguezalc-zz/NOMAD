@@ -2,29 +2,28 @@
   width: 10px;
   height: 10px;
   &-ok {
-    background-color: green;
+    background-color: #008000;
   }
   &-no {
-    background-color: white;
+    background-color: #ffffff;
   }
   &-no-link {
     background-color: orange;
   }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 10px 15px;
+  }
+
+  &-items {
+    border-bottom: 1px solid #008000;
+  }
 }
 
-.port-status-wrapper {
-  display: flex;
-  margin: 0 10px;
-  align-items: center;
-  margin: 0px 15px 10px 15px;
-}
-
-.port-status-title {
+.port-status-wrapper .port-status-title {
   font-family: "Pathway Gothic One";
   font-size: 24px;
   margin: 0 5px;
-}
-
-.port-status-items {
-  border-bottom: 1px solid green;
 }

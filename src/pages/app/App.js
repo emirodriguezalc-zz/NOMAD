@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import SideMenu from '../../components/sideMenu/index';
+import { BrowseRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
+import SideMenu from '../../components/sideMenu/index';
+import summary from '../summary';
+import cpu from '../cpu';
+import thumb from '../thumb';
+import notFound from '../notFound';
 import logo from '../../images/logo.png';
 import nomadLogo from '../../images/nomad-logo.png';
 import bridgeHd from '../../images/bridgetech-world-hd.jpg'
 import bridge from '../../images/bridgetech-world.jpg'
-import { BrowseRouter as Router, Switch, Route } from 'react-router-dom';
-import summary from '../summary';
-import cpu from '../cpu';
-import thumb from '../thumb';
 
 function App() {
   const useProgressiveImage = src => {
@@ -34,13 +35,16 @@ function App() {
       </div>
       <div className='main-content'>
         <SideMenu />
-        <div className='dinamic-content'>
-          <Route path='/summary' component={summary} />
-          <Route path='/cpu' component={cpu} />
-          <Route path='/thumb' component={thumb} />
+        <div className='dynamic-content'>
+          <Switch>
+            <Route exact path={['/', '/summary']} component={summary} />
+            <Route path='/cpu' component={cpu} />
+            <Route path='/thumb' component={thumb} />
+            <Route component={notFound} />
+          </Switch>
         </div>
       </div>
-    {/*   <div className='main-footer'> Copyright © 2020 Bridge Technologies. All rights reserved</div> */}
+      {/*   <div className='main-footer'> Copyright © 2020 Bridge Technologies. All rights reserved</div> */}
     </div>
   );
 }

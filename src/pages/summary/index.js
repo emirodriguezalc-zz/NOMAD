@@ -27,6 +27,7 @@ const summary = () => (
             summaryData.map((item, i) => i < 3 && <SummaryItems name={item.name} status={item.status} children={item.children} />)
           }
         </div>
+
         <div className='nomad-summary-items'>
           {
             summaryData.map((item, i) => i > 3 && i < 7 && <SummaryItems name={item.name} status={item.status} children={item.children} />)
@@ -38,7 +39,6 @@ const summary = () => (
           }
         </div>
       </div>
-
     </div>
   </div>
 );

@@ -1,8 +1,8 @@
 .summary-wrapper {
   font-family: "Pathway Gothic One";
-  color: white;
-  margin: 0 2vw 2vw 2vw;
+  color: #ffffff;
   display: flex;
+  background-color: rgba(255, 254, 254, 0.158);
   flex-direction: column;
   text-align: center;
 }
@@ -17,16 +17,9 @@
   margin-bottom: 25px;
 }
 
-.summary-title {
-}
-
-.nomad-hardware-containter {
-}
-
-.nomad-summary-items-wrapper {
-display: flex;
-}
-
 .nomad-summary-items {
   flex-grow: 1;
+  &-wrapper {
+    display: flex;
+  }
 }

@@ -6,7 +6,6 @@ const Thumb = ({ title, serviceId }) => {
 
   useEffect(() => {
     const interval = setInterval(showImage, 5000);
-
     return () => clearInterval(interval)
   }, [image])
 
@@ -24,7 +23,6 @@ const Thumb = ({ title, serviceId }) => {
       <div className="thumb-img">
         <img src={image} />
       </div>
-
     </div>
   );
 }
