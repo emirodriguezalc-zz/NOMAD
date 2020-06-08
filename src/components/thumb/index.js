@@ -21,7 +21,7 @@ const Thumb = ({ title, serviceId }) => {
         <input type="checkbox" /> <div>Freeze</div>
       </div>
       <div className="thumb-img">
-        <img src={image} />
+        <img src={image} alt=""/>
       </div>
     </div>
   );

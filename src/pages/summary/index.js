@@ -11,7 +11,7 @@ const summary = () => (
   <div className="summary-wrapper">
     <h1 className="summary-title">Summary</h1>
     <div className='nomad-hardware-containter'>
-      <img className="nomad-hardware-image" src={hardware} alt="hardware image" />
+      <img className="nomad-hardware-image" src={hardware} alt="" />
       <div className='nomad-hardware-port-wrapper'>
         {
           portData.map((port) => <PortStatus name={port.name} status={port.status} />)
